@@ -9,3 +9,54 @@ airflow-webserver.pid
 webserver_config.py
 airflow.cfg
 airflow.db
+
+# Recommended ignores for Apache Airflow projects
+# Airflow
+airflow.db
+airflow.cfg
+logs/
+*.log
+*.pid
+webserver_config.py
+
+# MinIO data
+include/data/minio/
+
+# Metabase data
+include/data/metabase/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+
+# Astronomer
+.astro/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Secrets
+*.pem
+*.key
+secrets/
